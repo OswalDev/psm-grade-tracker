@@ -29,7 +29,7 @@ const TotalSpent = () => {
             $37.5K
           </p>
           <div className="flex flex-col items-start">
-            <p className="mt-2 text-sm text-gray-600">Total Spent</p>
+            <p className="mt-2 text-sm text-gray-600">GPA</p>
             <div className="flex flex-row items-center justify-center">
               <MdArrowDropUp className="font-medium text-green-500" />
               <p className="text-sm font-bold text-green-500"> +2.45% </p>
