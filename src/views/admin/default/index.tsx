@@ -22,12 +22,12 @@ const Dashboard = () => {
       <div className="mt-3 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-6">
         <Widget
           icon={<MdBarChart className="h-7 w-7" />}
-          title={"Total signatures"}
+          title={"Total subjects"}
           subtitle={"120"}
         />
         <Widget
           icon={<IoDocuments className="h-6 w-6" />}
-          title={"Signatures approved"}
+          title={"Subjects approved"}
           subtitle={"47"}
         />
         <Widget
@@ -38,7 +38,7 @@ const Dashboard = () => {
         <Widget
           icon={<MdDashboard className="h-6 w-6" />}
           title={"Semester completion"}
-          subtitle={"%20"}
+          subtitle={"20%"}
         />
         <Widget
           icon={<MdBarChart className="h-7 w-7" />}
