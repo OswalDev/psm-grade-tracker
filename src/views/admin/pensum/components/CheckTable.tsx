@@ -33,7 +33,7 @@ function CheckTable(props: { tableData: any }) {
         <div className="flex items-center">
           <Checkbox
             defaultChecked={info.getValue()[1]}
-            colorScheme="brandScheme"
+            colorscheme="brandScheme"
             me="10px"
           />
           <p className="ml-3 text-sm font-bold text-navy-700 dark:text-white">
@@ -71,7 +71,7 @@ function CheckTable(props: { tableData: any }) {
     columnHelper.accessor("date", {
       id: "date",
       header: () => (
-        <p className="text-sm font-bold text-gray-600 dark:text-white">DATE</p>
+        <p className="text-sm font-bold text-gray-600 dark:text-white">FECHA</p>
       ),
       cell: (info) => (
         <p className="text-sm font-bold text-navy-700 dark:text-white">

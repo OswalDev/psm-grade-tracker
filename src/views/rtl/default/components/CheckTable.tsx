@@ -33,7 +33,7 @@ function CheckTable(props: { tableData: any }) {
         <div className="flex items-center">
           <Checkbox
             defaultChecked={info.getValue()[1]}
-            colorScheme="brandScheme"
+            colorcheme="brandScheme"
             me="10px"
           />
           <p className="text-sm font-bold text-navy-700 ms-3 dark:text-white">

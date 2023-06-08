@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardMenu from "components/card/CardMenu";
 import { DiApple } from "react-icons/di";
 import { DiAndroid } from "react-icons/di";
@@ -14,12 +14,17 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "config/firebase";
 
 type RowObj = {
-  name: string;
-  tech: any;
-  date: string;
-  progress: number;
+  code: string;
+  subject: String;
+  th: number;
+  ph: number;
+  lh: number;
+  ht: number;
+  prelation: Array<string>;
 };
 
 function CheckTable(props: { tableData: any }) {
@@ -27,8 +32,8 @@ function CheckTable(props: { tableData: any }) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   let defaultData = tableData;
   const columns = [
-    columnHelper.accessor("name", {
-      id: "name",
+    columnHelper.accessor("code", {
+      id: "code",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">CÓDIGO</p>
       ),
@@ -38,8 +43,8 @@ function CheckTable(props: { tableData: any }) {
         </p>
       ),
     }),
-    columnHelper.accessor("tech", {
-      id: "tech",
+    columnHelper.accessor("subject", {
+      id: "subject",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">ASIGNATURA</p>
       ),
@@ -49,8 +54,8 @@ function CheckTable(props: { tableData: any }) {
         </p>
       ),
     }),
-    columnHelper.accessor("name", {
-      id: "name",
+    columnHelper.accessor("th", {
+      id: "th",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">HT</p>
       ),
@@ -60,8 +65,8 @@ function CheckTable(props: { tableData: any }) {
         </p>
       ),
     }),
-    columnHelper.accessor("name", {
-      id: "name",
+    columnHelper.accessor("ph", {
+      id: "ph",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">HP</p>
       ),
@@ -71,8 +76,8 @@ function CheckTable(props: { tableData: any }) {
         </p>
       ),
     }),
-    columnHelper.accessor("name", {
-      id: "name",
+    columnHelper.accessor("lh", {
+      id: "lh",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">HL</p>
       ),
@@ -82,21 +87,10 @@ function CheckTable(props: { tableData: any }) {
         </p>
       ),
     }),
-    columnHelper.accessor("name", {
-      id: "name",
+    columnHelper.accessor("ht", {
+      id: "ht",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">TH</p>
-      ),
-      cell: (info) => (
-        <p className="text-sm font-bold text-navy-700 dark:text-white">
-          {info.getValue()}
-        </p>
-      ),
-    }),
-    columnHelper.accessor("date", {
-      id: "date",
-      header: () => (
-        <p className="text-sm font-bold text-gray-600 dark:text-white">FECHA</p>
       ),
       cell: (info) => (
         <p className="text-sm font-bold text-navy-700 dark:text-white">
@@ -120,7 +114,7 @@ function CheckTable(props: { tableData: any }) {
     //     </div>
     //   ),
     // }),
-    columnHelper.accessor("date", {
+    columnHelper.accessor("prelation", {
       id: "date",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">PRELACIÓN</p>
@@ -133,6 +127,19 @@ function CheckTable(props: { tableData: any }) {
     }),
     
   ]; // eslint-disable-next-line
+
+  const [subjects, setSubjects] = useState({})
+
+  useEffect(()  => {
+    getDocs(collection(db, "subjects")).then((snapShot) => {
+      snapShot.forEach((doc) => {
+        console.log(doc.id, doc.data());
+        setSubjects(doc.data());
+        // console.log(subjects)
+      })
+    })
+  }, []);
+
   const [data, setData] = React.useState(() => [...defaultData]);
   const table = useReactTable({
     data,
@@ -149,7 +156,7 @@ function CheckTable(props: { tableData: any }) {
     <Card extra={"w-full h-full sm:overflow-auto px-6"}>
       <header className="relative flex items-center justify-between pt-4">
         <div className="text-xl font-bold text-navy-700 dark:text-white">
-          Check Table
+          PENSUM PARA ING. EN SISTEMAS
         </div>
 
         <CardMenu />
@@ -187,7 +194,7 @@ function CheckTable(props: { tableData: any }) {
           <tbody>
             {table
               .getRowModel()
-              .rows.slice(0, 10)
+              .rows
               .map((row) => {
                 return (
                   <tr key={row.id}>
