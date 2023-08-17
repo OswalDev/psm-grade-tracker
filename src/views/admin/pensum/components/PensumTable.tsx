@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import pensumData from 'pensumData'; // Replace './pensumData' with the correct file path
 import CardMenu from "components/card/CardMenu";
 import { DiApple } from "react-icons/di";
 import { DiAndroid } from "react-icons/di";
@@ -17,9 +18,10 @@ import {
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "config/firebase";
 
+
 type RowObj = {
-  code: string;
-  subject: String;
+  uc: number;
+  subject: string;
   th: number;
   ph: number;
   lh: number;
@@ -27,12 +29,14 @@ type RowObj = {
   prelation: Array<string>;
 };
 
-function CheckTable(props: { tableData: any }) {
-  const { tableData } = props;
+
+function PensumTable() {
+  const [subjectsArray, setSubjectsArray] = useState<RowObj[]>([]);
+  // readint JSON file
+  // const jsonString = pensumData.readFileSync('pensum.json', 'utf-8')
   const [sorting, setSorting] = React.useState<SortingState>([]);
-  let defaultData = tableData;
   const columns = [
-    columnHelper.accessor("code", {
+    columnHelper.accessor("uc", {
       id: "code",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">CÓDIGO</p>
@@ -128,19 +132,38 @@ function CheckTable(props: { tableData: any }) {
     
   ]; // eslint-disable-next-line
 
-  const [subjects, setSubjects] = useState({})
+  //get data from Firestore Database
+  const [data, setData] = React.useState(() => subjectsArray);
 
-  useEffect(()  => {
-    getDocs(collection(db, "subjects")).then((snapShot) => {
-      snapShot.forEach((doc) => {
-        console.log(doc.id, doc.data());
-        setSubjects(doc.data());
-        // console.log(subjects)
-      })
-    })
+  // const dataArray: subjectsArray = []
+  async function fetchSubjectsData() {
+    try {
+      // Replace this part with the JSON data from pensum.json
+      const data: RowObj[] = pensumData.semesters.flatMap((semester) =>
+        semester.subjects.map((subject) => ({
+          uc: subject.uc || 0,
+          subject: subject.subject || "",
+          th: subject.th || 0,
+          ph: subject.ph || 0,
+          lh: subject.lh || 0,
+          ht: subject.ht || 0,
+          prelation: subject.prelation || [],
+        }))
+      );
+
+      console.log('Subjects data:', data);
+      setSubjectsArray(data);
+    } catch (error) {
+      console.error('Error fetching subjects data:', error);
+    }
+  }
+  
+
+  // Call the function to fetch "subjects" data
+  useEffect(() => {
+    fetchSubjectsData(); // Call the function to fetch "subjects" data
   }, []);
 
-  const [data, setData] = React.useState(() => [...defaultData]);
   const table = useReactTable({
     data,
     columns,
@@ -152,6 +175,7 @@ function CheckTable(props: { tableData: any }) {
     getSortedRowModel: getSortedRowModel(),
     debugTable: true,
   });
+
   return (
     <Card extra={"w-full h-full sm:overflow-auto px-6"}>
       <header className="relative flex items-center justify-between pt-4">
@@ -221,5 +245,5 @@ function CheckTable(props: { tableData: any }) {
   );
 }
 
-export default CheckTable;
+export default PensumTable;
 const columnHelper = createColumnHelper<RowObj>();

@@ -18,20 +18,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export const db = getFirestore(app);
-
-
-// export const fetchSubjects = async () => {
-//   try {
-//     const subjectsCollection = collection(db, "subjects");
-//     const querySnapshot = await getDocs(subjectsCollection);
-//     const subjects = querySnapshot.docs.map((doc) => ({
-//       id: doc.id,
-//       ...doc.data()
-//     }));
-//     return subjects;
-//   } catch (error) {
-//     console.log("Error fetching subjects:", error);
-//     return [];
-//   }
-// };

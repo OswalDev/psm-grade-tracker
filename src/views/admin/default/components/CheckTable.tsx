@@ -19,10 +19,9 @@ type RowObj = {
   date: string;
 };
 
-function CheckTable(props: { tableData: any }) {
-  const { tableData } = props;
+function CheckTable() {
+  
   const [sorting, setSorting] = React.useState<SortingState>([]);
-  let defaultData = tableData;
   const columns = [
     columnHelper.accessor("name", {
       id: "name",
@@ -80,7 +79,7 @@ function CheckTable(props: { tableData: any }) {
       ),
     }),
   ]; // eslint-disable-next-line
-  const [data, setData] = React.useState(() => [...defaultData]);
+  const [data, setData] = React.useState(() => []);
   const table = useReactTable({
     data,
     columns,
