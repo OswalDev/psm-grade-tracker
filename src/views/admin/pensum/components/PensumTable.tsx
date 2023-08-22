@@ -20,8 +20,9 @@ import { db } from "config/firebase";
 
 
 type RowObj = {
-  uc: number;
+  code: number;
   subject: string;
+  uc: number;  
   th: number;
   ph: number;
   lh: number;
@@ -36,7 +37,7 @@ function PensumTable() {
   // const jsonString = pensumData.readFileSync('pensum.json', 'utf-8')
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const columns = [
-    columnHelper.accessor("uc", {
+    columnHelper.accessor("code", {
       id: "code",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">CÓDIGO</p>
@@ -119,7 +120,7 @@ function PensumTable() {
     //   ),
     // }),
     columnHelper.accessor("prelation", {
-      id: "date",
+      id: "prelation",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">PRELACIÓN</p>
       ),
@@ -138,23 +139,13 @@ function PensumTable() {
   // const dataArray: subjectsArray = []
   async function fetchSubjectsData() {
     try {
-      // Replace this part with the JSON data from pensum.json
-      const data: RowObj[] = pensumData.semesters.flatMap((semester) =>
-        semester.subjects.map((subject) => ({
-          uc: subject.uc || 0,
-          subject: subject.subject || "",
-          th: subject.th || 0,
-          ph: subject.ph || 0,
-          lh: subject.lh || 0,
-          ht: subject.ht || 0,
-          prelation: subject.prelation || [],
-        }))
-      );
-
-      console.log('Subjects data:', data);
+      const querySnapshot = await getDocs(collection(db, "subjects"));
+      const data: RowObj[] = querySnapshot.docs.map((doc) => doc.data() as RowObj);
+  
+      console.log("Subjects data:", data);
       setSubjectsArray(data);
     } catch (error) {
-      console.error('Error fetching subjects data:', error);
+      console.error("Error fetching subjects data:", error);
     }
   }
   
@@ -163,6 +154,11 @@ function PensumTable() {
   useEffect(() => {
     fetchSubjectsData(); // Call the function to fetch "subjects" data
   }, []);
+
+   // Initialize the data state once subjectsArray is populated
+   useEffect(() => {
+    setData(subjectsArray);
+  }, [subjectsArray]);
 
   const table = useReactTable({
     data,
