@@ -20,13 +20,13 @@ import { db } from "config/firebase";
 
 
 type RowObj = {
-  code: number;
-  subject: string;
-  uc: number;  
-  th: number;
-  ph: number;
-  lh: number;
-  ht: number;
+  code: number; // subject's code
+  subject: string; // subject's name
+  uc: number; // subject's credit unit
+  th: number; // subject's total hours
+  hp: number; // subject's hours of practice
+  hl: number; // subject's hours of laboratory
+  ht: number; // subjects 
   prelation: Array<string>;
 };
 
@@ -70,8 +70,8 @@ function PensumTable() {
         </p>
       ),
     }),
-    columnHelper.accessor("ph", {
-      id: "ph",
+    columnHelper.accessor("hp", {
+      id: "hp",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">HP</p>
       ),
@@ -81,8 +81,8 @@ function PensumTable() {
         </p>
       ),
     }),
-    columnHelper.accessor("lh", {
-      id: "lh",
+    columnHelper.accessor("hl", {
+      id: "hl",
       header: () => (
         <p className="text-sm font-bold text-gray-600 dark:text-white">HL</p>
       ),

@@ -8,7 +8,7 @@ const seedData = {
         "subject": "LENGUAJE Y COMUNICACIÓN",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -18,7 +18,7 @@ const seedData = {
         "subject": "METODOLO. DE LA INVESTIG. I",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -28,7 +28,7 @@ const seedData = {
         "subject": "MATEMÁTICA I",
         "ht": 3,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 4,
         "prelation": ["[S/P]"]
@@ -36,9 +36,9 @@ const seedData = {
       {
         "code": "4702121",
         "subject": "ACTIVIDAD DE ORIENTACION",
-        "ht": "-",
+        "ht": 0,
         "hp": 4,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -46,9 +46,9 @@ const seedData = {
       {
         "code": "4702111",
         "subject": "EDUCACION FISICA Y DEPORTES I",
-        "ht": "-",
+        "ht": 0,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 2,
         "uc": 1,
         "prelation": ["[S/P]"]
@@ -56,9 +56,9 @@ const seedData = {
       {
         "code": "4701111",
         "subject": "ACT. DE FORMACION CULTURAL I",
-        "ht": "-",
+        "ht": 0,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 2,
         "uc": 1,
         "prelation": ["[S/P]"]
@@ -68,7 +68,7 @@ const seedData = {
         "subject": "INTRO. A LA ING. DE SISTEMAS",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -78,7 +78,7 @@ const seedData = {
         "subject": "ALGEBRA I",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["[S/P]"]
@@ -88,7 +88,7 @@ const seedData = {
         "subject": "INTRODUCCION A LA COMPUTACION",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -98,7 +98,7 @@ const seedData = {
         "subject": "INTROD. A LA ADMINISTRACION",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -107,8 +107,8 @@ const seedData = {
         "code": "4702222",
         "subject": "ECONOMIA GENERAL",
         "ht": 2,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 2,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -118,7 +118,7 @@ const seedData = {
         "subject": "MATEMÁTICA II",
         "ht": 3,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 4,
         "prelation": ["4701141"]
@@ -126,9 +126,9 @@ const seedData = {
       {
         "code": "4702112",
         "subject": "EDUC., SALUD FISICA Y DEPORTES II",
-        "ht": "-",
+        "ht": 0,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 2,
         "uc": 1,
         "prelation": ["[S/P]"]
@@ -136,9 +136,9 @@ const seedData = {
       {
         "code": "4701112",
         "subject": "ACT. DE FORMACION CULTURAL II",
-        "ht": "-",
+        "ht": 0,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 2,
         "uc": 1,
         "prelation": ["[S/P]"]
@@ -148,7 +148,7 @@ const seedData = {
         "subject": "INGLES I",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["[S/P]"]
@@ -158,7 +158,7 @@ const seedData = {
         "subject": "ALGEBRA LINEAL",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701131", "4701141"]
@@ -168,7 +168,7 @@ const seedData = {
         "subject": "LENGUAJE DE PROGRAMACION I",
         "ht": 1,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 2,
         "prelation": ["4704121", "4705121"]
@@ -178,7 +178,7 @@ const seedData = {
         "subject": "FISICA I",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["4701141"]
@@ -188,7 +188,7 @@ const seedData = {
         "subject": "MATEMÁTICA III",
         "ht": 3,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 4,
         "prelation": ["4701242"]
@@ -198,7 +198,7 @@ const seedData = {
         "subject": "CONTABILIDAD I",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["[S/P]"]
@@ -208,7 +208,7 @@ const seedData = {
         "subject": "LENGUAJE DE PROGRAMACION II",
         "ht": 1,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 2,
         "prelation": ["4701222"]
@@ -218,7 +218,7 @@ const seedData = {
         "subject": "INGLES II",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4701122"]
@@ -228,7 +228,7 @@ const seedData = {
         "subject": "TEORIA DE SISTEMAS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4704121"]
@@ -238,7 +238,7 @@ const seedData = {
         "subject": "FISICA II",
         "ht": 3,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 4,
         "prelation": ["4702232", "4701242"]
@@ -248,7 +248,7 @@ const seedData = {
         "subject": "LENGUAJE DE PROGRAMACION III",
         "ht": 1,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 2,
         "prelation": ["4701323"]
@@ -258,7 +258,7 @@ const seedData = {
         "subject": "MATEMÁTICA IV",
         "ht": 3,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 4,
         "prelation": ["4701243"]
@@ -268,7 +268,7 @@ const seedData = {
         "subject": "CONTABILIDAD II",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701233"]
@@ -278,7 +278,7 @@ const seedData = {
         "subject": "ESTADISTICA I",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["4701242"]
@@ -288,7 +288,7 @@ const seedData = {
         "subject": "ESTRUCTURAS DISCRETAS Y GRAFOS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701242", "4701323"]
@@ -297,7 +297,7 @@ const seedData = {
         "code": "4701224",
         "subject": "LABORATORIO DE FISICA",
         "ht": 1,
-        "hp": "-",
+        "hp": 0,
         "hl": 3,
         "th": 4,
         "uc": 2,
@@ -307,8 +307,8 @@ const seedData = {
         "code": "4701334",
         "subject": "ELECTIVA I",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -318,7 +318,7 @@ const seedData = {
         "subject": "PROGRAMACION NUMERICA",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701324", "4701244"]
@@ -328,7 +328,7 @@ const seedData = {
         "subject": "ESTADISTICA II",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["4702334"]
@@ -337,8 +337,8 @@ const seedData = {
         "code": "4701325",
         "subject": "TEORIA DE LA ORGANIZACION",
         "ht": 2,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 2,
         "uc": 2,
         "prelation": ["470-3222", "4701333"]
@@ -348,7 +348,7 @@ const seedData = {
         "subject": "ANALISIS Y DISEÑO DE SISTEMAS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701333"]
@@ -358,7 +358,7 @@ const seedData = {
         "subject": "BASE DE DATOS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701324", "4703334"]
@@ -367,8 +367,8 @@ const seedData = {
         "code": "4701335",
         "subject": "ELECTIVA II",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -378,7 +378,7 @@ const seedData = {
         "subject": "ESTRUCTURA DE DATOS",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["4701324"]
@@ -388,7 +388,7 @@ const seedData = {
         "subject": "PROGRAMACION NO NUMERICA I",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4706335"]
@@ -398,7 +398,7 @@ const seedData = {
         "subject": "TEORIA DE LA INFORMACION",
         "ht": 2,
         "hp": 1,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4703335", "4704335"]
@@ -408,7 +408,7 @@ const seedData = {
         "subject": "INGENIERIA ECONOMICA",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4701244", "4702222"]
@@ -418,7 +418,7 @@ const seedData = {
         "subject": "METODOLOGIA DE LA INVESTIGACION II",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4703121", "97 UCA"]
@@ -438,7 +438,7 @@ const seedData = {
         "subject": "SISTEMAS OPERATIVOS I",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4703335"]
@@ -448,7 +448,7 @@ const seedData = {
         "subject": "ORGANIZACIÓN DEL COMPUTADOR",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4701324"]
@@ -457,8 +457,8 @@ const seedData = {
         "code": "4701336",
         "subject": "ELECTIVA III",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -466,11 +466,11 @@ const seedData = {
       {
         "code": "4700006",
         "subject": "TALLER DE INDUCCIÓN AL SERVICIO COMUNITARIO **",
-        "ht": "-",
-        "hp": "-",
-        "hl": "-",
-        "th": "-",
-        "uc": "-"
+        "ht": 0,
+        "hp": 0,
+        "hl": 0,
+        "th": 0,
+        "uc": 0
       },
       {
         "code": "4703347",
@@ -487,7 +487,7 @@ const seedData = {
         "subject": "PROGRAMACION NO NUMERICA II",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4703336"]
@@ -497,7 +497,7 @@ const seedData = {
         "subject": "PLANIFICACION DE SISTEMAS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4703335", "4704335"]
@@ -507,7 +507,7 @@ const seedData = {
         "subject": "SISTEMAS I",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4703335", "4703336"]
@@ -517,7 +517,7 @@ const seedData = {
         "subject": "INVESTIGACION DE OPERACIONES I",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701244", "4702335"]
@@ -526,8 +526,8 @@ const seedData = {
         "code": "4701337",
         "subject": "ELECTIVA IV",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -537,7 +537,7 @@ const seedData = {
         "subject": "SISTEMAS OPERATIVOS II",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4702336"]
@@ -545,18 +545,18 @@ const seedData = {
       {
         "code": "4700007",
         "subject": "PROYECTO DE SERVICIO COMUNITARIO ***",
-        "ht": "-",
-        "hp": "-",
-        "hl": "-",
-        "th": "-",
-        "uc": "-"
+        "ht": 0,
+        "hp": 0,
+        "hl": 0,
+        "th": 0,
+        "uc": 0
       },
       {
         "code": "4702338",
         "subject": "SISTEMAS II",
         "ht": 2,
         "hp": 3,
-        "hl": "-",
+        "hl": 0,
         "th": 5,
         "uc": 3,
         "prelation": ["4701327"]
@@ -566,7 +566,7 @@ const seedData = {
         "subject": "SISTEMA DE INFORMACION",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4701326"]
@@ -576,7 +576,7 @@ const seedData = {
         "subject": "INVESTIGACION DE OPERACIONES II",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4704337"]
@@ -585,8 +585,8 @@ const seedData = {
         "code": "4702328",
         "subject": "SIST. Y PROC. ADMINISTRATIVOS",
         "ht": 2,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 2,
         "uc": 2,
         "prelation": ["4701325"]
@@ -595,8 +595,8 @@ const seedData = {
         "code": "4701338",
         "subject": "ELECTIVA V",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -606,7 +606,7 @@ const seedData = {
         "subject": "SIMULACION DIGITAL",
         "ht": 1,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 3,
         "uc": 2,
         "prelation": ["4703347"]
@@ -614,18 +614,18 @@ const seedData = {
       {
         "code": "4700008",
         "subject": "PROYECTO DE SERVICIO COMUNITARIO ****",
-        "ht": "-",
-        "hp": "-",
-        "hl": "-",
-        "th": "-",
-        "uc": "-"
+        "ht": 0,
+        "hp": 0,
+        "hl": 0,
+        "th": 0,
+        "uc": 0
       },
       {
         "code": "4703339",
         "subject": "OPTIMIZACION DE SIST. Y FUNCIONES",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4704338"]
@@ -635,7 +635,7 @@ const seedData = {
         "subject": "AUDITORIA Y EVALUACION DE SIST.",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4702338"]
@@ -644,8 +644,8 @@ const seedData = {
         "code": "4702329",
         "subject": "ADMINISTRACION DE SIST. DE INFOR.",
         "ht": 2,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 2,
         "uc": 2,
         "prelation": ["4703338"]
@@ -655,7 +655,7 @@ const seedData = {
         "subject": "DISEÑO EVALUACION DE PROYECTOS",
         "ht": 2,
         "hp": 2,
-        "hl": "-",
+        "hl": 0,
         "th": 4,
         "uc": 3,
         "prelation": ["4704338"]
@@ -665,7 +665,7 @@ const seedData = {
         "subject": "PROYECTO DE INVESTIGACION",
         "ht": 2,
         "hp": 6,
-        "hl": "-",
+        "hl": 0,
         "th": 8,
         "uc": 4,
         "prelation": ["VIII SEM APROB"]
@@ -674,8 +674,8 @@ const seedData = {
         "code": "4701339",
         "subject": "ELECTIVA VI",
         "ht": 3,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 3,
         "uc": 3,
         "prelation": ["*"]
@@ -684,8 +684,8 @@ const seedData = {
         "code": "4701329",
         "subject": "ETICA Y DEONTOLOGIA PROFESIONAL",
         "ht": 2,
-        "hp": "-",
-        "hl": "-",
+        "hp": 0,
+        "hl": 0,
         "th": 2,
         "uc": 2,
         "prelation": ["155 UCA"]
@@ -693,9 +693,9 @@ const seedData = {
       {
         "code": "4714810",
         "subject": "PASANTIA",
-        "ht": "-",
+        "ht": 0,
         "hp": 20,
-        "hl": "-",
+        "hl": 0,
         "th": 20,
         "uc": 8,
         "prelation": ["IX APROBADO"]
@@ -705,7 +705,7 @@ const seedData = {
         "subject": "TRABAJO DE GRADO",
         "ht": 2,
         "hp": 12,
-        "hl": "-",
+        "hl": 0,
         "th": 14,
         "uc": 6,
         "prelation": ["4701449"]
@@ -715,14 +715,14 @@ const seedData = {
   
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: 'https://s4nt14g0-m4r1n0.firebaseio.com' // Replace with your database URL
+    databaseURL: 'https://s4nt14g0-m4r1n0.firebaseio.com' // firebase database URL
   });
   
   const db = admin.firestore();
 
   async function seedFirestore() {
-    for (const subject of seedData.subjects) { // Use seedData.subjects instead of seedData[subject]
-      const collectionRef = db.collection('subjects'); // Use 'subjects' as the collection name
+    for (const subject of seedData.subjects) { // Going through JSON file to seed firestore database
+      const collectionRef = db.collection('subjects'); // target collection
       await collectionRef.add(subject);
     }
   }
